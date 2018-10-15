@@ -1,4 +1,4 @@
-package com.rha.app.rha;
+package com.rha.app.rha.view.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,7 +7,7 @@ import android.os.Handler;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.rha.app.rha.view.IntroActivity;
+import com.rha.app.rha.R;
 
 public class SplashActivity extends Activity {
 

@@ -1,16 +1,14 @@
-package com.rha.app.rha.view;
+package com.rha.app.rha.view.activity;
 
 import android.app.Activity;
 import android.os.Handler;
-import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.widget.Toast;
+
 import com.rha.app.rha.R;
 import com.rha.app.rha.view.adapters.ViewPagerAdapter;
 

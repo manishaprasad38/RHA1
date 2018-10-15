@@ -1,20 +1,13 @@
 package com.rha.app.rha.view.adapters;
-import android.app.ActionBar.LayoutParams;
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.text.method.ReplacementTransformationMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.rha.app.rha.R;
-import com.rha.app.rha.view.IntroActivity;
 
 public class ViewPagerAdapter extends PagerAdapter {
 

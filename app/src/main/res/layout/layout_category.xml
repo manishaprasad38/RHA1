@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txtwastelines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#222222"
+        android:text="Why waste your important time surfing uselessly?"/>
+    <view class="android.support.v7.app.AlertController$RecycleListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_below="@+id/txtwastelines"
+        android:id="@+id/list_category">
+
+    </view>
 
 </RelativeLayout>

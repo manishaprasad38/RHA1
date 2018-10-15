@@ -1,4 +1,4 @@
-package com.rha.app.rha.view;
+package com.rha.app.rha.view.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
