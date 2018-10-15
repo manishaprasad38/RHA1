@@ -1,4 +1,4 @@
-package com.rha.app.rha.view.activity;
+package com.rha.app.rha.view.fragment;
 
 
 import android.app.Activity;

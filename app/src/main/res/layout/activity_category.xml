@@ -13,13 +13,13 @@
         android:layout_marginTop="16dp"
         android:textColor="#222222"
         android:text="Why waste your important time surfing uselessly?"/>
-    <view class="android.support.v7.app.AlertController$RecycleListView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ListView
         android:background="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@+id/txtwastelines"
         android:id="@+id/list_category">
 
-    </view>
+    </ListView>
 
 </RelativeLayout>

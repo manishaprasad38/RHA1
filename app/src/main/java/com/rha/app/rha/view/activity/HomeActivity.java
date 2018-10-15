@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 
 import com.rha.app.rha.R;
+import com.rha.app.rha.view.fragment.NavigationDrawerFragment;
 
 public class HomeActivity extends Activity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
