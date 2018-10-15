@@ -20,15 +20,16 @@ public class ViewPagerAdapter extends PagerAdapter {
 
     private Context context;
     private LayoutInflater layoutInflater;
-    private Integer [] images = {R.mipmap.icon_test,R.mipmap.icon_test,R.mipmap.icon_test};
+    private String [] txt;
 
-    public ViewPagerAdapter(Context context) {
+    public ViewPagerAdapter(Context context, String[] txt) {
         this.context = context;
+        this.txt = txt;
     }
 
     @Override
     public int getCount() {
-        return images.length;
+        return txt.length;
     }
 
     @Override
@@ -42,7 +43,7 @@ public class ViewPagerAdapter extends PagerAdapter {
         layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = layoutInflater.inflate(R.layout.activity_intro_items, null);
         ImageView imageView = (ImageView) view.findViewById(R.id.ima1);
-        imageView.setImageResource(images[position]);
+      //  imageView.setImageResource(images[position]);
 
 
         ViewPager vp = (ViewPager) container;
