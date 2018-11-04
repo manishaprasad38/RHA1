@@ -13,5 +13,39 @@
 
     <string name="action_example">Example action</string>
 
+    //intro screen
+    <string name="action_headers1">Make  Money- Join hands with us and earn more money &amp; use the app to the best</string>
+    <string name="action_headers2">Why wait?...Save Time – Focus on your business and  we work for your convenience </string>
+    <string name="action_headers3">Hawww my product was damaged…Where to go for Help</string>
+    <string name="action_headers4">RHA Crowns You</string>
+    <string name="action_headers5">Everything for Your Convenience </string>
+
+    <string name="action_headers1_desc1">Take the full time work opportunity-with us by becoming an agent/open your own store</string>
+    <string name="action_headers1_desc2">Work part time - earn money whenever you are free to work from home</string>
+    <string name="action_headers1_desc3">Become rich - This app is no waste and helps grow everybody</string>
+    <string name="action_headers1_desc4">Sell us - Sell your product online here free of cost</string>
+
+    <string name="action_headers2_desc1">The fastest 1 day delivery – long waits for your products is now over</string>
+    <string name="action_headers2_desc2">Know what you want –  We help you to take you to exactly the right product which you need ,all fast and easy.</string>
+    <string name="action_headers2_desc3">I Believe in Quality –So why to get confused with thousands of products which can be cheap,fake and of poor quality unnessarily marketed to sell </string>
+    <string name="action_headers2_desc4">The No.1 Online Home Appliances Get Yours Now</string>
+
+    <string name="action_headers3_desc1">Take a relief – As we have local stores for your better assistance</string>
+    <string name="action_headers3_desc2">Originality is what we are – No theft,no duplicates,only 100% original</string>
+    <string name="action_headers3_desc3">Getting informed is your right – Know all amazing features of the product before buying helping for clear analysis of your personal benefits.</string>
+
+    <string name="action_headers4_desc1">Money issues – Pay in EMI’s and enjoy the experience of topmost products</string>
+    <string name="action_headers4_desc2">In shop experience wherever you like – live demo with audio visuals of your product</string>
+    <string name="action_headers4_desc3">Surprise gifts on all your purchases – free products, national-international tours and everything you like</string>
+    <string name="action_headers4_desc4">Make your shopping so convenient -  Schedule it for later before you lose it </string>
+
+    <string name="action_headers5_desc1">Working in a company – Ask us for Product Qotations</string>
+    <string name="action_headers5_desc2">Product Combos - Special rates for products to give in a marriage</string>
+    <string name="action_headers5_desc3">Recharge Your D2H – From anywhere just simple and easy</string>
+    <string name="action_headers5_desc4">Are you tired of all these - We take care for your product, delivery, Installation, demo, warranty, service, exchange and everything</string>
+
     <string name="action_settings">Settings</string>
+    <string name="intro_header"></string>
+    <string name="open_time">OPEN \n 24 HOURS</string>
+    <string name="privacy"> "I agree to RHA <u>privacy policy</u> &amp; <u>Term and Conditions.</u> "</string>
 </resources>

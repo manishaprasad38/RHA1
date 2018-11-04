@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#c7c0be"
+        android:textSize="12sp"
+        android:hint="Email"
+        android:drawablePadding="8dp"
+        android:drawableLeft="@drawable/email"
+        android:textColor="#fff"
+        android:background="@drawable/line_shape"
+        />
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        android:drawablePadding="8dp"
+        android:drawableRight="@drawable/show_password"
+        android:drawableLeft="@drawable/password"
+        android:textColorHint="#c7c0be"
+        android:textSize="12sp"
+        android:textColor="#fff"
+        android:background="@drawable/line_shape"
+        android:layout_below="@id/edtEmail" />
+    <TextView
+        android:id="@+id/txtForgotPasspwrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPassword"
+        android:textSize="14sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="#fff"
+        android:text="Forgot Password?"
+        />
+    <TextView
+        android:id="@+id/txtClickSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="SIGN IN"
+        android:background="#c2a41d"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_below="@+id/txtForgotPasspwrd"
+        />
+    <TextView
+        android:id="@+id/txtCoupon"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Get your first sign up coupon"
+        android:background="#bdffffff"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:drawablePadding="8dp"
+        android:drawableLeft="@drawable/rupee"
+        android:layout_below="@+id/txtClickSignIn"/>
+    <TextView
+        android:id="@+id/txtSignInWith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in with"
+        android:textColor="#fff"
+        android:layout_below="@+id/txtCoupon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageButton
+        android:id="@+id/facebookLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/facebook"
+        android:layout_below="@+id/txtSignInWith"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        />
+    <ImageButton
+        android:id="@+id/GoogleLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtSignInWith"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/google" />
+</RelativeLayout>

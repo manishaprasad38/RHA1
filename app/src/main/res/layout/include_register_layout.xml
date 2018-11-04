@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:textColorHint="#c7c0be"
+        android:textSize="12sp"
+        android:textColor="#fff"
+        android:hint="Email"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="8dp"
+        android:layout_below="@+id/view_btn"
+        android:background="@drawable/line_shape"
+        />
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:textColorHint="#c7c0be"
+        android:textSize="12sp"
+        android:hint="Create a Password"
+        android:drawableLeft="@drawable/password"
+        android:drawableRight="@drawable/show_password"
+        android:drawablePadding="8dp"
+        android:textColor="#fff"
+        android:background="@drawable/line_shape"
+        android:layout_below="@id/edtEmail" />
+    <TextView
+        android:id="@+id/txtPrivacy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#c7c0be"
+        android:drawablePadding="8dp"
+        android:drawableLeft="@drawable/checkbox_selected"
+        android:gravity="center|left"
+        android:text="@string/privacy"
+        android:layout_below="@+id/edtPassword"/>
+    <TextView
+        android:id="@+id/txtOpen"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/open_time"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_below="@+id/txtPrivacy"/>
+    <TextView
+        android:id="@+id/txtClickRegister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="REGISTER"
+        android:textSize="16sp"
+        android:background="#dcb711"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_below="@+id/txtOpen"
+        />
+
+</RelativeLayout>

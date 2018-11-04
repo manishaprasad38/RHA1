@@ -1,6 +1,7 @@
 package com.rha.app.rha.presentor;
 
 import com.google.gson.GsonBuilder;
+import com.rha.app.rha.model.User;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -14,7 +15,7 @@ import retrofit2.http.POST;
 import retrofit2.http.Query;
 
 public class ApiServices {
-    public static String BASE_URL = "http://";
+    public static String BASE_URL = "http://nakamarket.in/admin/apis/";
     public static Retrofit retrofitClint = null;
 
 //    http://www.silverzonementor.com
@@ -53,8 +54,15 @@ public class ApiServices {
 
     public interface ApiInterfaces {
 
-//        @GET("/Login")
-//        Call<User> Login(@Query("userName") String userName, @Query("password") String password);
+        @POST("signup.php")
+        Call<User> Signup(@Query("firstname") String firstname, @Query("lastname") String lastname,@Query("email") String email,
+                          @Query("phone") String phone,@Query("password") String password );
+
+        @POST("login.php")
+        Call<User> Login(@Query("userName") String userName, @Query("password") String password);
+
+        @POST("getHome.php")
+        Call<User> Home(@Query("ecart") String ecart);
 
     }
 }
