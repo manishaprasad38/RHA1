@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+<item android:id="@+id/reward"
+    android:title="REWARD">
+    <menu
+       >
+        <item
+            android:id="@+id/makeMoney"
+            android:title="Make Money" />
+        <item
+            android:id="@+id/share_app"
+            android:title="Share App &amp; Earn" />
+
+    </menu>
+</item>
+    <item android:id="@+id/other"
+        android:title="OTHER">
+        <menu
+           >
+            <item
+                android:id="@+id/feedback"
+                android:title="Feedback" />
+            <item
+                android:id="@+id/rate_app"
+                android:title="Rate this App" />
+
+        </menu>
+    </item>
+</menu>

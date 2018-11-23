@@ -67,7 +67,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="20dp"
         android:text="Get your first sign up coupon"
-        android:background="#bdffffff"
+        android:background="#5cffffff"
         android:textColor="#ffffff"
         android:gravity="center"
         android:drawablePadding="8dp"
