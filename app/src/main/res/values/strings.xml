@@ -49,4 +49,9 @@
     <string name="open_time">OPEN \n 24 HOURS</string>
     <string name="privacy"> "I agree to RHA <u>privacy policy</u> &amp; <u>Term and Conditions.</u> "</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="action_home">Home</string>
+    <string name="action_categories">Categories</string>
+    <string name="action_search">Search</string>
+    <string name="action_offers">Offers</string>
+    <string name="action_inbox">Inbox</string>
 </resources>

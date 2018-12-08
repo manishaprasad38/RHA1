@@ -14,6 +14,9 @@ import android.graphics.RectF;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.os.Environment;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -28,6 +31,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.rha.app.rha.R;
+import com.rha.app.rha.view.adapters.ListBrandAdapter;
+import com.rha.app.rha.view.adapters.ListCategoriesAdapter;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -48,26 +53,14 @@ import static android.app.Activity.RESULT_OK;
  */
 public class HomeFragment extends android.support.v4.app.Fragment {
 
-    private Spinner categorySpinner;
-    private EditText edtRaise;
-    private TextView txtAddPhotos, txtSignature, txtSubmitPhotos;
-    private LinearLayout btnLayout, signatureLayout;
-    private Button cancelSign, saveSign;
-    private String TAG = HomeFragment.class.getSimpleName(), catagoryName, raiseVal;
-  //  private List<SaveApiRequestDto.ImagesDto> imageList;
-
-
-    File file;
-    Dialog dialog;
-    View view;
-    Bitmap bitmap;
-
-    // Creating Separate Directory for saving Generated Images
-    String DIRECTORY = Environment.getExternalStorageDirectory().getPath() + "/DigitSign/";
-    String pic_name = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(new Date());
-    String StoredPath = DIRECTORY + pic_name + ".png";
-
-    private ProgressDialog progressDialog ;
+    private String TAG = HomeFragment.class.getSimpleName();
+    private RecyclerView mlistCategories;
+    private RecyclerView mlistBrands;
+    private EditText mSearch;
+    private ListBrandAdapter mBrandAdapter;
+    private ListCategoriesAdapter mCategoriesAdapter;
+    private ArrayList<String> mListCategories;
+    private ArrayList<String> mListBrands;
 
     public static HomeFragment getInstanace() {
         HomeFragment fragment = new HomeFragment();
@@ -87,9 +80,20 @@ public class HomeFragment extends android.support.v4.app.Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         View rootView = inflater.inflate(R.layout.fragment_home, container, false);
-        initView(rootView);
+        mlistBrands = (RecyclerView)rootView.findViewById(R.id.listBrands);
+        mlistCategories = (RecyclerView)rootView.findViewById(R.id.listCategories);
+        mSearch = (EditText)rootView.findViewById(R.id.edtSearch);
+        mBrandAdapter = new ListBrandAdapter(getActivity(),mListBrands);
+        mCategoriesAdapter = new ListCategoriesAdapter(getActivity(),mListCategories);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getActivity());
+        mlistCategories.setLayoutManager(mLayoutManager);
+        RecyclerView.LayoutManager mGridLayoutManager = new GridLayoutManager(getActivity(),3);
+        mlistBrands.setLayoutManager(mGridLayoutManager);
+
         return rootView;
+
     }
 
 
